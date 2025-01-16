@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 2</title>
-    <link rel="stylesheet" href="./css/common.css" />
-  </head>
-  <body>
-    <p><a href="./index.html">Go back</a></p>
 
-    <ul class="gallery"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2</title>
+  <link rel="stylesheet" href="./css/common.css" />
+</head>
 
-    <script src="./js/task-2.js" type="module"></script>
-  </body>
+<body>
+  <p><a href="./index.html">Go back</a></p>
+
+  <ul class="gallery"></ul>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      height: 1128 px;
+      gap: 16px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      height: 300 px;
+      width: 360 px;
+    }
+
+    .gallery-image {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+  </style>
+
+  <script src="./js/task-2.js" type="module"></script>
+</body>
+
 </html>
